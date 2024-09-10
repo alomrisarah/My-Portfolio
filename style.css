@@ -1,0 +1,38 @@
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+   
+}
+
+ header {
+     background-color: #333;
+     color: #fff;
+     padding: 10px 0;
+     text-align: center;
+ }
+
+ section {
+     padding: 20px;
+ }
+
+ .projects {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+ }
+
+ .project {
+     border: 1px solid #ddd;
+     padding: 20px;
+     width: 300px;
+ }
