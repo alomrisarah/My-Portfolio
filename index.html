@@ -1,83 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>My Portfolio</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  <!-- Main CSS File -->
+  <link href="style.css" rel="stylesheet" />
+ </head>
 
-<body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
+ <body>
+  <header id="header">
+   <div class="container">
+    <nav id="navmenu" class="navmenu">
+     <ul>
+      <li>
+       <a href="#hero">Home</a>
+      </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul>
+    </nav>
+   </div>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Sara alomari and frontend developer.</p>
-        <p>Hello! I'm a frontend developer passionate about building beautiful and functional websites</p>
-      
-        <div class="info">
-            <p class="pink">
-                <span><i class="fa fa-gift"></i> <strong>Birthday:</strong></span> 09.03.1995
-            </p>
-            <p class="pink">
-                <span><i class="fa fa-calendar"></i> <strong>Age:</strong></span> 30
-            </p>
-            <p class="pink">
-                <span><i class="fa fa-map-marker"></i> <strong>Location:</strong></span> Irbid, Jordan
-            </p>
-            <p class="pink">
-                <span><i class="fa fa-university"></i> <strong>Study:</strong></span> Yarmouk University
-            </p>
-            <p class="pink">
-                <span><i class="fa fa-graduation-cap"></i> <strong>Degree:</strong></span> Bachelor's
-            </p>
-            <p class="pink">
-                <span><i class="fa fa-book"></i> <strong>Education:</strong></span> Computer Science
-            </p>
+  <main class="main">
+   <!-- Hero Section -->
+   <section id="hero">
+    <h2>Sara Alomari</h2>
+    <p>frontend developer</p>
+   </section>
+   <!-- /Hero Section -->
 
-        </div>
-        <button><a href="my-cv.pdf" class="download-btn" download>Download CV</a></button>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>this project is food menu you can add the dessert to cart and remove from cart and view the total
-                    price and confirm the order (Food Menu with Cart and Order Confirmation).</p>
-                <a href="https://github.com/alomrisarah/food-menu">View github link for the Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>this project is to rate a service so you can choose from 1 (1 is the lowest) to 5 (5 is highest) and
-                    when you submit a thank you screen and the value you chose
-                    will be displayed .</p>
-                <a href="https://github.com/alomrisarah/rating-component">View github link for the Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>this project is to answer FAQ ,every quastion has a "+" button to display the answer and when the
-                    answer displayed the "+" button repalced with "-"to hide answer again.</p>
-                <a href="https://github.com/alomrisarah/FAQ-Section">View github link for the Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 4</h3>
-                <p>Tasky is to mange your tasks so you can view your task with time traker and timesheet and setting to
-                    make it as you need and its responsive for mobile view and small screens</p>
-                <a href="https://github.com/alomrisarah/Tasky">View github link for the Project</a>
-            </div>
-        </div>
-    </section>
+   <!-- About Section -->
 
-    <footer>
-        <p>Contact: <a href="mailto:saramahalomari@gmail.com">E-mail:saramahalomari@gmail.com</a></p>
+   <section id="about">
+    <p><strong>Name: </strong> <span>Sara Alomari</span></p>
+    <p><strong>Profile: </strong> <span>Frontend developer</span></p>
+    <p>
+     <strong>Email: </strong> <span><a href="saramahalomari@gmail.com">saramahalomari@gmail.com</a></span>
+    </p>
+    <p><strong>Phone: </strong> <span>+962-7-9790 8438</span></p>
+    <div class="section-title">
+     <h2>Skills</h2>
+    </div>
+    <div class="progress">
+     <span class="skill">HTML</span>
+     <progress value="100" max="100"></progress>
+    </div>
+    <!-- End Skills Item -->
 
-        <p>phone: 0797308438</p>
-    </footer>
-</body>
+    <div class="progress">
+     <span class="skill">CSS</span>
+     <progress value="90" max="100"></progress>
+    </div>
+    <!-- End Skills Item -->
 
+    <div class="progress">
+     <span class="skill">JavaScript</span>
+     <progress value="75" max="100"></progress>
+    </div>
+    <!-- End Skills Item -->
+
+    <div class="section-title">
+     <h2>About me</h2>
+    </div>
+    <p>I'm Sara alomari and frontend developer.</p>
+    <p>Hello! I'm a frontend developer passionate about building beautiful and functional websites</p>
+    <p>Translating clients’ design concepts into responsive and interactive web applications using HTML, CSS, and JavaScript with clean and efficient code following best practices and coding standards.</p>
+    <p>Implementing and maintaining web accessibility standards to ensure inclusivity.</p>
+    <p>Testing and debugging web applications, identifying and resolving issues promptlyUsing version control systems to manage codebase and collaborate effectively</p>
+
+    <p>Staying updated with the latest web development trends, tools, and best practices.</p>
+      <button><a href="my-cv.pdf" download class="btn btn-primary">Download CV</a></button>
+
+   </section>
+   <!-- /About Section -->
+
+   <!-- Resume Section -->
+   <section id="education" class="education">
+    <!-- Section Title -->
+    <div class="section-title">
+     <h2>Education</h2>
+    </div>
+    <!-- End Section Title -->
+    <h4>Bachelor’s Degree</h4>
+    <h5>2013 - 2017</h5>
+    <p><em>Bachelor’s Degree in Computer Science Yarmouk University</em></p>
+    <h4><em>some of Computer Science Subjects</em></h4>
+    <p>Programming and Software Development</p>
+    <p>Data Structures and Algorithms</p>
+    <p>Computer Systems and Architecture</p>
+    <p>Operating Systems</p>
+    <p>Databases</p>
+    <p>Networks and Security</p>
+
+    <!-- End education section-->
+   </section>
+   <!-- /Resume Section -->
+   <!-- Projects Section -->
+   <section id="Projects" class="Projects">
+    <!-- Section Title -->
+    <div class="section-title">
+     <h2>Projects</h2>
+     <p>Here are some of my projects</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="projects">
+     <div class="project-item position-relative">
+      <h3>Project 1</h3>
+      <p>this project is food menu you can add the dessert to cart and remove from cart and view the total price and confirm the order (Food Menu with Cart and Order Confirmation).</p>
+      <a href="https://github.com/alomrisarah/food-menu">View github link for the Project</a>
+     </div>
+     <!-- End Service Item -->
+
+     <div class="project-item">
+      <h3>Project 2</h3>
+      <p>this project is to rate a service so you can choose from 1 (1 is the lowest) to 5 (5 is highest) and when you submit a thank you screen and the value you chose will be displayed .</p>
+      <a href="https://github.com/alomrisarah/rating-component">View github link for the Project</a>
+     </div>
+     <!-- End Service Item -->
+
+     <div class="project-item">
+      <h3>Project 3</h3>
+      <p>this project is to answer FAQ ,every quastion has a "+" button to display the answer and when the answer displayed the "+" button repalced with "-"to hide answer again.</p>
+      <a href="https://github.com/alomrisarah/FAQ-Section">View github link for the Project</a>
+     </div>
+     <!-- End Service Item -->
+
+     <div class="project-item">
+      <h3>Project 4</h3>
+      <p>Tasky is to mange your tasks so you can view your task with time traker and timesheet and setting to make it as you need and its responsive for mobile view and small screens</p>
+      <a href="https://github.com/alomrisarah/Tasky">View github link for the Project</a>
+     </div>
+     <!-- End Service Item -->
+    </div>
+   </section>
+   <!-- /Services Section -->
+
+   <!-- Contact Section -->
+   <section id="contact" class="contact">
+    <!-- Section Title -->
+    <div class="section-title">
+     <h2>Contact</h2>
+    </div>
+    <!-- End Section Title -->
+    <div class="address">
+     <h3>Address</h3>
+     <p>Irbid, Jordan</p>
+    </div>
+    <!-- End Info Item -->
+    <div class="call">
+     <h3>Call Us</h3>
+     <p>+962-7-9790 8438</p>
+    </div>
+    <!-- End Info Item -->
+    <div class="email">
+     <h3>Email Us</h3>
+     <p><a href="saramahalomari.@gmail.com">saramahalomari.@gmail.com</a></p>
+    </div>
+    <!-- End Info Item -->
+    <form id="contactForm" action="forms/contact.php" method="post">
+     <input type="text" name="name" placeholder="Your Name" required />
+     <input type="email" name="email" placeholder="Your Email" required/>
+     <input type="text" name="subject" placeholder="Subject" required />
+     <textarea name="message"  placeholder="Message" required></textarea>
+
+     <!-- Messages -->
+     <div id="loading" style="display: none">Loading...</div>
+     <div id="error-message" class="error-message" style="display: none; color: red">There was an error. Please try again.</div>
+     <div id="sent-message" class="sent-message" style="display: none; color: green">Your message has been sent. Thank you!</div>
+
+     <button type="submit">Send Message</button>
+    </form>
+    <!-- End Contact Form -->
+   </section>
+   <!-- /Contact Section -->
+  </main>
+
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+ </body>
 </html>
