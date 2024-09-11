@@ -1,4 +1,20 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    border: 2px solid red;
+    /* For debugging, remove or adjust as needed */
+}
+
+html {
+    font-size: 16px;
+    /* Base font size */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
 body {
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -15,17 +31,18 @@ a {
 h2,
 h3,
 h5 {
-    margin: 0 0 20px;
+    margin: 0 0 1.25rem;
+    /* 20px */
 }
 
 #header {
     width: 100%;
-    padding: 20px 0;
     background-color: #333;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 .navmenu {
@@ -38,13 +55,16 @@ h5 {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
+    /* 30px */
 }
 
 .navmenu ul li a {
     color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 1rem;
+    /* 16px */
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
     transition: color 0.3s ease;
 }
 
@@ -56,133 +76,158 @@ h5 {
     height: 100vh;
     background-color: #f0f0f0;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
+    /* 20px */
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 120px;
-    padding: 20px;
+    padding-top: 7.5rem;
+    /* 120px */
+    padding: 1.25rem;
+    /* 20px */
+    box-sizing: border-box;
 }
 
 #hero h2 {
-    font-size: 48px;
+    font-size: 3rem;
+    /* 48px */
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+    /* 10px */
 }
 
 #hero p {
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* 20px */
     color: #777;
 }
 
 #about {
-    padding: 100px 20px;
+    padding: 6.25rem 1.25rem;
+    /* 100px 20px */
     background-color: #fff;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 #about p {
-    font-size: 16px;
+    font-size: 1rem;
+    /* 16px */
     color: #555;
 }
 
 #about h5 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    /* 24px */
+    margin-bottom: 1.25rem;
+    /* 20px */
     color: #333;
 }
 
 .progress {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    /* 20px */
     display: flex;
     align-items: center;
 }
 
 .skill {
-    width: 100px;
+    width: 6.25rem;
+    /* 100px */
     font-weight: bold;
     color: #333;
-    margin-right: 20px;
+    padding-right: 1.25rem;
+    /* 20px */
 }
 
 progress {
     width: 100%;
-    height: 20px;
+    height: 1.25rem;
+    /* 20px */
     -webkit-appearance: none;
     appearance: none;
 }
 
 progress::-webkit-progress-bar {
     background-color: #f3f3f3;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
+    /* 5px */
 }
 
 progress::-webkit-progress-value {
     background-color: #3498db;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
+    /* 5px */
     transition: width 0.4s ease;
 }
 
 progress::-moz-progress-bar {
     background-color: #3498db;
-    border-radius: 5px;
-   transition: width 0.4s ease;
-   
+    border-radius: 0.3125rem;
+    /* 5px */
+    transition: width 0.4s ease;
 }
-
 
 .education {
     background-color: #f9f9f9;
-    padding: 100px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 1.25rem;
+    /* 20px */
 }
 
 .section-title {
-    font-size: 24px;
-    color: #007bff;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    /* 24px */
+    color: #333;
+    margin-bottom: 1.875rem;
+    /* 30px */
 }
 
 .education h4,
 .education h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    /* 20px */
+    margin-bottom: 0.625rem;
+    /* 10px */
 }
 
 .education {
     margin: 0;
-    font-size: 16px;
+    font-size: 1rem;
+    /* 16px */
     color: #777;
 }
 
-
 #Projects {
-    padding: 100px 20px;
-       background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 1.25rem;
+    /* 20px */
+    background-color: #fff;
 }
 
 .project-item {
     background-color: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    /* 20px */
+    margin-bottom: 1.25rem;
+    /* 20px */
+    border-radius: 0.5rem;
+    /* 8px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .project-item h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
+    /* 22px */
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+    /* 10px */
 }
 
 .project-item p {
-    font-size: 16px;
+    font-size: 1rem;
+    /* 16px */
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+    /* 10px */
 }
 
 .project-item a {
@@ -191,51 +236,50 @@ progress::-moz-progress-bar {
 }
 
 .contact {
-    padding: 100px 20px;
+    padding: 6.25rem 1.25rem;
+    /* 100px 20px */
     background-color: #f0f0f0;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .contact .section-title h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
+    /* 28px */
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    /* 20px */
 }
 
 .contact .address,
 .contact .call,
 .contact .email {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    /* 20px */
 }
 
 .contact form input,
 .contact form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 0.625rem;
+    /* 10px */
+    margin-bottom: 0.625rem;
+    /* 10px */
     border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 0.3125rem;
+    /* 5px */
+    font-size: 1rem;
+    /* 16px */
 }
 
 .contact form button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
+    /* 5px */
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-button{
-    padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
 }
 
 .contact form button:hover {
@@ -243,7 +287,8 @@ button{
 }
 
 footer {
-    padding: 20px 0;
+    padding: 1.25rem 0;
+    /* 20px */
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -258,16 +303,16 @@ footer {
 
 @media (max-width: 768px) {
     .navmenu ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    
+        #hero h2 {
+            font-size: 36px;
+        }
+    
+        #hero p {
+            font-size: 18px;
+        }
     }
-
-    #hero h2 {
-        font-size: 36px;
-    }
-
-    #hero p {
-        font-size: 18px;
-    }
-}
