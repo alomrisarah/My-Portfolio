@@ -17,6 +17,7 @@ a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+
 }
 
 a:hover {
@@ -68,6 +69,7 @@ section h2 {
 .info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
 }
 
 .project {
@@ -127,7 +129,9 @@ button {
     display: inline-block;
     transition: background-color 0.3s;
     border: none;
+    cursor: pointer;
 }
+
 
 .project a:hover {
     background-color: #f06595;
