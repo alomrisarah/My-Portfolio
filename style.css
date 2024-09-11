@@ -70,6 +70,7 @@ section h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
+    padding: 1rem;
 }
 
 .project {
@@ -113,7 +114,7 @@ p span {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
     font-size: 25px;
 }
 
@@ -131,13 +132,15 @@ button {
     border: none;
     cursor: pointer;
 }
-
+button{
+    width: 150px;
+    align-self: center;
+}
 
 .project a:hover {
     background-color: #f06595;
 }
 
-/* Footer */
 footer {
     background-color: #ff6b6b;
     color: #fff;
